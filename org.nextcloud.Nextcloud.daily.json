@@ -1,5 +1,5 @@
 {
-    "app-id": "org.nextcloud.Nextcloud",
+    "app-id": "org.nextcloud.Nextcloud.daily",
     "branch": "stable",
     "runtime": "org.kde.Platform",
     "runtime-version": "5.9",
@@ -51,25 +51,23 @@
             "name": "nextcloud-client",
             "buildsystem": "cmake",
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DOEM_THEME_DIR=/run/build/nextcloud-client/nextcloudtheme",
+                "-DCMAKE_BUILD_TYPE=Debug",
                 "-DNO_SHIBBOLETH=1",
                 "-DCMAKE_INSTALL_LIBDIR=/app/lib",
-                "-DLIB_INSTALL_DIR=/app/lib"
+                "-DLIB_INSTALL_DIR=/app/lib",
+                "-DBUILD_SHELL_INTEGRATION_DOLPHIN=0"
             ],
-            "subdir": "client",
             "build-commands": [
-                "install -m755 ../nextcloud-client /app/bin"
+                "install -m755 nextcloud-client /app/bin"
             ],
             "post-install": [
                 "mkdir -p /app/share/appdata",
-                "cp ../org.nextcloud.Nextcloud.appdata.xml /app/share/appdata"
+                "cp org.nextcloud.Nextcloud.appdata.xml /app/share/appdata/org.nextcloud.Nextcloud.daily.appdata.xml"
             ],
             "sources": [
                 {
                     "type": "git", 
-                    "url": "https://github.com/nextcloud/client_theming.git",
-                    "tag": "v2.3.3"
+                    "url": "https://github.com/nextcloud/desktop.git"
                 },
                 {
                     "type": "script",

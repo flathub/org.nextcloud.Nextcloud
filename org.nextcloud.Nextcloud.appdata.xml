@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>org.nextcloud.Nextcloud.desktop</id>
+  <id>org.nextcloud.Nextcloud.daily.desktop</id>
   <name>Nextcloud</name>
   <project_license>GPL-2.0+</project_license>
   <summary>Nextcloud sync client</summary>
