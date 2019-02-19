@@ -1,6 +1,5 @@
 {
     "app-id": "org.nextcloud.Nextcloud",
-    "branch": "stable",
     "runtime": "org.kde.Platform",
     "runtime-version": "5.12",
     "sdk": "org.kde.Sdk",
