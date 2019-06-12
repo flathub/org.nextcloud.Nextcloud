@@ -17,7 +17,8 @@
         "--talk-name=org.freedesktop.Notifications",
         "--talk-name=org.freedesktop.secrets",
         "--talk-name=org.kde.StatusNotifierWatcher",
-        "--env=LD_LIBRARY_PATH=/app/lib:/app/lib/nextcloud"
+        "--env=LD_LIBRARY_PATH=/app/lib:/app/lib/nextcloud",
+        "--env=TMPDIR=/var/tmp"
     ],
     "cleanup": [
         "/share/icons/hicolor/1024x1024"
