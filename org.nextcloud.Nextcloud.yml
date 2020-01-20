@@ -6,7 +6,7 @@ runtime-version: '5.12'
 sdk: org.kde.Sdk
 
 command: nextcloud
-rename-desktop-file: nextcloud.desktop
+rename-desktop-file: com.nextcloud.desktopclient.nextcloud.desktop
 rename-icon: Nextcloud
 copy-icon: true
 
@@ -63,7 +63,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/nextcloud/desktop.git
-        tag: v2.6.2
-        commit: 1d745535f7a95ff2265d6b6b47121200338fce83
+        tag: v2.7.0-beta1
+        commit: 03cddabfd026af3af0006bd73bb7733c8b7b73f3
       - type: file
         path: org.nextcloud.Nextcloud.metainfo.xml
